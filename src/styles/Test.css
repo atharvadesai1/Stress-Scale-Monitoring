@@ -38,6 +38,7 @@
     transition: box-shadow 0.3s ease-in-out;
     padding: 10px 50px 10px 50px;
     margin: 20px auto
+    
 }
 
 .hed{
@@ -46,8 +47,13 @@
     top: 12%;
     transform: translate(-50%,-50%);
     font-family:header1;   
-    font-size: 60px;
+    font-size: 49px;
     font-weight: 100;
     padding: 0px 200px 0px 200px;
 }
 
+
+.subhead{
+    padding: 5px;
+    border-bottom: green  solid 2px;
+}
