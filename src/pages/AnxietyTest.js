@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import {aquestion} from "../pages/questions/Anxietyq";
 import Button from '@mui/material/Button';
+import '../styles/Test.css'
 
 
 function AnxietyTest() {
@@ -25,12 +26,13 @@ function AnxietyTest() {
     <div>
       <Layout>
         <div>
-        <br /><br /><br /><br /><br /><br />
-            <h1>Anxiety Test</h1>
-           <form action="">
-              {aquestion.map(getquestion)} <br />
-              <Button variant="contained" color="primary" type='submit'>Submit</Button>
-           </form>
+        <h2 className='hed'>Anxiety Test</h2>
+          <div className="formcontainer">
+            <form action="" className='form'>
+                {aquestion.map(getquestion)} <br />
+                <Button variant="contained" color="primary" type='submit' sx={{marginBottom:'15px', borderColor:'black'}}>Submit</Button>
+            </form>
+           </div>
         </div>
       </Layout>
     </div>

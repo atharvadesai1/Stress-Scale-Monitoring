@@ -1,14 +1,14 @@
-
 import React from 'react'
 import {Box, AppBar, Toolbar} from '@mui/material'
 import { Link } from 'react-router-dom'
+import '../styles/Header.css';
 
 
 function Header() {
   return (
     <>
       <Box>
-        <AppBar component='nav' sx={{bgcolor:'transparent'}}>
+        <AppBar component='nav' sx={{bgcolor:'#5D5B5A'}}>
           <Toolbar>
             <Box sx={{display: {xs:'none', sm:'block'}}}>
               <ul className='navigation_bar'>

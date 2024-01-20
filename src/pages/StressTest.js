@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import '../styles/Test.css'
 
 function StressTest() {
   return (
@@ -7,7 +8,7 @@ function StressTest() {
         <Layout>
             <div>
             <br /><br /><br /><br /><br /><br />
-            <h1>Stress Test</h1>
+            <div className='head'>Stress Test</div>
             </div>
         </Layout>
     </div>

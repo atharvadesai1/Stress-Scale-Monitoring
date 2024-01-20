@@ -3,17 +3,18 @@ import Layout from '../components/Layout'
 import { Link } from 'react-router-dom'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import '../styles/Test.css'
 
 function Tests() {
   return (
     <Layout>
       <div>
-        <br /><br /><br /><br /><br /><br />
-        <h1>Select Diagnosis Test</h1>
-        <Stack direction="column" spacing={2}>
-        <Link to='/tests/stress'><Button variant="contained" color="success">Stress</Button></Link>
-        <Link to='/tests/depression'><Button variant="contained" color="success">Depression</Button></Link>
-        <Link to='/tests/anxiety'><Button variant="contained" color="success">Anxiety</Button></Link>
+        <br /><br />
+        <div className='head'>Select Diagnosis Test</div><br /><br />
+        <Stack className='stack'>
+        <Link to='/tests/stress'><Button variant="contained" color="success" sx={{width:'500px',padding:'20px',margin:'10px',fontSize:'20px',fontFamily:'Gill Sans'}}>Stress</Button></Link>
+        <Link to='/tests/depression'><Button variant="contained" color="success" sx={{width:'500px',padding:'20px',margin:'10px',fontSize:'20px',fontFamily:'Gill Sans'}}>Depression</Button></Link>
+        <Link to='/tests/anxiety'><Button variant="contained" color="success" sx={{width:'500px',padding:'20px',margin:'10px',fontSize:'20px',fontFamily:'Gill Sans'}}>Anxiety</Button></Link>
         </Stack>
       </div>
 
