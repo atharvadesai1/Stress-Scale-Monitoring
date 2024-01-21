@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom'
 // import StressScore from './score/StressScore'
 
 // let finalScore;
-var encryp = {}
+// var encryp = {}
+let exportScore;
 
 const StressTest = ()=> {
   const[selected,setSelected] = useState({
@@ -15,10 +16,46 @@ const StressTest = ()=> {
     q6:"",q7:"",q8:"",q9:"",q10:""
   })
   // const[trigger,setTrigger] = useState(0)
-  // const [score,setScore] = useState(0);
+  const [score,setScore] = useState(0);
+  let totalScore = 0
+
+  const getInteger = (valueN)=>{
+    if(valueN==="1"){
+        return 1;
+    }
+    else if(valueN==="2"){
+        return 2;
+    }
+    else if(valueN==="3"){
+        return 3;
+    }
+    else if(valueN==="4"){
+        return 4;
+    }
+    else if(valueN==="5"){
+        return 5;
+    }
+    else{
+        return 0
+    }
+  } 
 
   const handleTrigger = ()=>{
-    encryp = selected
+    console.log(`Selected ${selected}`)
+    const objectLength = Object.entries(selected).length;
+    const valuesObject = Object.values(selected);
+    for(let i=0;i<objectLength;i++){
+      let optNum = valuesObject[i]
+      let selectedOptNum = getInteger(optNum)
+      let optionBox = squestion[i].options
+      let valueAdded = optionBox[selectedOptNum][1]
+      console.log(`Value Added ${valueAdded}`)
+      totalScore+=valueAdded;
+    }
+    console.log(`total score ${totalScore}`)
+    exportScore = totalScore;
+    setScore((prevScore)=>prevScore+totalScore)
+    console.log(`Final Score: ${score}`)
   }
 
   const handleOnchange = (e)=>{
@@ -56,7 +93,7 @@ const StressTest = ()=> {
                 {squestion.map(getquestion)} <br />
                 {/* {trigger===1?<StressScore selec={selected}/>:""}   */}
                 <Link to='/tests/stressscore'>
-                <Button variant="contained" color="primary" type='submit' sx={{marginBottom:'15px', borderColor:'black'}} onClick={handleTrigger}>Submit</Button> 
+                <Button variant="contained" color="primary" sx={{marginBottom:'15px', borderColor:'black'}} onClick={handleTrigger}>Submit</Button> 
                 </Link>    
             </form>
            </div>
@@ -66,6 +103,6 @@ const StressTest = ()=> {
   )
 }
 
-export {encryp}
+export {exportScore}
 export default StressTest
 
