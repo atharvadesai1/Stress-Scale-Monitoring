@@ -57,3 +57,18 @@
     padding: 5px;
     border-bottom: green  solid 2px;
 }
+
+.scorecard{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.hedg{
+    font-family:header1;   
+    font-size: 49px;
+    font-weight: 100;
+    padding: 10px;
+}
