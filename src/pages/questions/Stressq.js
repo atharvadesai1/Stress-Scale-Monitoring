@@ -36,7 +36,7 @@ const squestion = [
     },
     {
         "que": "Q8] In the last month, how often have you felt that you were on top of things?",
-        "options":[["",0],["Never",0],["Almost Never",1],["Sometimes",2],["Fairly Often",3],["Very Often",4]],
+        "options":[["",0],["Never",4],["Almost Never",3],["Sometimes",2],["Fairly Often",1],["Very Often",0]],
         "qno":"q8"
     },
     {
