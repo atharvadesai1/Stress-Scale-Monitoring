@@ -1,4 +1,4 @@
-# Stress Monitoring and test analysis webpage
+# Stress Monitoring and Test analysis website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
