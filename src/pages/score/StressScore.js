@@ -9,6 +9,7 @@ function StressScore() {
     let stressType;
     const MAX_SCORE = 40
     const exportNoScore = MAX_SCORE-exportScore 
+
     if (exportScore <= 13) {
     stressType = "Low Stress";
     } else if (exportScore >= 14 && exportScore <= 26) {

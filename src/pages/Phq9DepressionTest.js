@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Layout from '../components/Layout'
 import { dquestion } from './questions/Phq9Depressionq';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 import '../styles/Test.css'
 
 let exportScore;
@@ -81,8 +82,10 @@ function Phq9DepressionTest() {
             <div className="formcontainer">
             <form className='form'>
                 <h2 className='subhead' style={{fontFamily:"serif"}}>Depression: PHQ9</h2>
-                {dquestion.map(getquestion)} <br />                
-                <Button variant="contained" color="primary" sx={{marginBottom:'15px', borderColor:'black'}} onClick={handleTrigger}>Submit</Button>
+                {dquestion.map(getquestion)} <br />  
+                <Link to='/tests/depressionscore'>              
+                    <Button variant="contained" color="primary" sx={{marginBottom:'15px', borderColor:'black'}} onClick={handleTrigger}>Submit</Button>
+                </Link>
             </form>
             </div>
         </div>
