@@ -1,21 +1,16 @@
-import React, {useState} from 'react'
+import React,{useState} from 'react'
 import Layout from '../components/Layout'
-import {squestion} from "../pages/questions/Stressq";
+import { dquestion } from './questions/Phq2Depressionq';
 import Button from '@mui/material/Button';
 import '../styles/Test.css'
-import { Link } from 'react-router-dom' 
-// import StressScore from './score/StressScore'
 
-// let finalScore;
-// var encryp = {}
 let exportScore;
 
-const StressTest = ()=> {
+function Phq2DepressionTest() {
   const[selected,setSelected] = useState({
-    q1:"",q2:"",q3:"",q4:"",q5:"",
-    q6:"",q7:"",q8:"",q9:"",q10:""
+    q1:"",q2:""
   })
-  // const[trigger,setTrigger] = useState(0)
+
   const [score,setScore] = useState(0);
   let totalScore = 0
 
@@ -32,9 +27,6 @@ const StressTest = ()=> {
     else if(valueN==="4"){
         return 4;
     }
-    else if(valueN==="5"){
-        return 5;
-    }
     else{
         return 0
     }
@@ -47,7 +39,7 @@ const StressTest = ()=> {
     for(let i=0;i<objectLength;i++){
       let optNum = valuesObject[i]
       let selectedOptNum = getInteger(optNum)
-      let optionBox = squestion[i].options
+      let optionBox = dquestion[i].options
       let valueAdded = optionBox[selectedOptNum][1]
       console.log(`Value Added ${valueAdded}`)
       totalScore+=valueAdded;
@@ -57,7 +49,6 @@ const StressTest = ()=> {
     setScore((prevScore)=>prevScore+totalScore)
     console.log(`Final Score: ${score}`)
   }
-
 
   const handleOnchange = (e)=>{
     setSelected(()=>({
@@ -70,32 +61,28 @@ const StressTest = ()=> {
     return (
       <div>
         <h4>{value['que']}</h4>
-        <input type="radio" name={value["qno"]} id="1" value="1" onChange={handleOnchange}/>
+        <input type="radio" name={value['qno']} id="1" value="1" onChange={handleOnchange}/>
         <label htmlFor="1">{value['options'][1][0]}</label><br/>
-        <input type="radio" name={value["qno"]} id="2" value="2" onChange={handleOnchange}/>
+        <input type="radio" name={value['qno']} id="2" value="2" onChange={handleOnchange}/>
         <label htmlFor="2">{value['options'][2][0]}</label><br/>
-        <input type="radio" name={value["qno"]} id="3" value="3" onChange={handleOnchange}/>
+        <input type="radio" name={value['qno']} id="3" value="3" onChange={handleOnchange}/>
         <label htmlFor="3">{value['options'][3][0]}</label><br/>
-        <input type="radio" name={value["qno"]} id="4" value="4" onChange={handleOnchange}/>
+        <input type="radio" name={value['qno']} id="4" value="4" onChange={handleOnchange}/>
         <label htmlFor="4">{value['options'][4][0]}</label><br/>
-        <input type="radio" name={value["qno"]} id="5" value="5" onChange={handleOnchange}/>
-        <label htmlFor="5">{value['options'][5][0]}</label><br/>
       </div>
-    )
+    ) 
   }
 
   return (
     <div>
       <Layout>
         <div>
-        <h2 className='hed'>Stress Test</h2>
+        <h2 className='hed'>Depression Test</h2>
           <div className="formcontainer">
             <form className='form'>
-                {squestion.map(getquestion)} <br />
-                {/* {trigger===1?<StressScore selec={selected}/>:""}   */}
-                <Link to='/tests/stressscore'>
-                <Button variant="contained" color="primary" sx={{marginBottom:'15px', borderColor:'black'}} onClick={handleTrigger}>Submit</Button> 
-                </Link>    
+                <h2 className='subhead' style={{fontFamily:"serif"}}>Depression: PHQ2</h2>
+                {dquestion.map(getquestion)} <br />                
+                <Button variant="contained" color="primary" sx={{marginBottom:'15px', borderColor:'black'}} onClick={handleTrigger}>Submit</Button>
             </form>
            </div>
         </div>
@@ -105,5 +92,4 @@ const StressTest = ()=> {
 }
 
 export {exportScore}
-export default StressTest
-
+export default Phq2DepressionTest;
