@@ -8,7 +8,46 @@
     align-items: center; */
 }
   
-img {
-width: 70%; 
-height: 70%; 
+
+.greenbox{
+    border: 7px rgba(122, 250, 122, 0.864) solid;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    left: 0px;
+    background-color: rgba(122, 250, 122, 0.864);
+    transform: skewX(-15deg); /* Skew the border to the left */
+    transform-origin: 0 0;
+}
+
+.forminfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+.formp{
+    background-color: white;
+    border: 2px white solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+Button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px #6200ea solid;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid rgb(12, 31, 153);
 }
