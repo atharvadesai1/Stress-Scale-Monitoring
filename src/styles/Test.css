@@ -47,7 +47,7 @@
 }
 
 .hed{
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 12%;
     transform: translate(-50%,-50%);
@@ -113,4 +113,8 @@
 }
 .graphs>:nth-child(2){
     margin-left: 40px;
+}
+
+.givepq9>h4{
+    font-family: header2
 }

@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { dquestion } from './questions/Phq2Depressionq';
 import Button from '@mui/material/Button';
 import '../styles/Test.css'
+import { Link } from 'react-router-dom';
 
 let exportScore;
 
@@ -12,6 +13,7 @@ function Phq2DepressionTest() {
   })
 
   const [score,setScore] = useState(0);
+  const [showresult, setShowresult] = useState(0);
   let totalScore = 0
 
   const getInteger = (valueN)=>{
@@ -48,6 +50,7 @@ function Phq2DepressionTest() {
     exportScore = totalScore;
     setScore((prevScore)=>prevScore+totalScore)
     console.log(`Final Score: ${score}`)
+    setShowresult(1);
   }
 
   const handleOnchange = (e)=>{
@@ -56,6 +59,24 @@ function Phq2DepressionTest() {
     }))
   }
   console.log(selected);
+
+  function ResultAnalysis(){
+    if(exportScore>3){
+      return(
+        <div className="givepq9">
+          <h4 style={{color:'red'}}>Your Depression Score is high!😧</h4>
+          <Link to='/tests/phq9depression'><Button variant="contained" color="secondary" sx={{marginBottom:'15px', borderColor:'black'}}>Continue PQ-9 Test</Button></Link>
+        </div>
+        )
+    }
+    else{
+      return(
+        <div className="givepq9">
+          <h4 style={{color:'green'}}>Your Depression Score is Low! No further testing required 😀</h4>
+        </div>
+      )
+    }
+  }
 
   const getquestion = (value)=>{
     return (
@@ -83,6 +104,7 @@ function Phq2DepressionTest() {
                 <h2 className='subhead' style={{fontFamily:"serif"}}>Depression: PHQ2</h2>
                 {dquestion.map(getquestion)} <br />                
                 <Button variant="contained" color="primary" sx={{marginBottom:'15px', borderColor:'black'}} onClick={handleTrigger}>Submit</Button>
+                {showresult?<ResultAnalysis></ResultAnalysis>:<div></div>}
             </form>
            </div>
         </div>
