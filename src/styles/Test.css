@@ -142,7 +142,6 @@
 .flex-box {
     width: 85%; 
     height: 390px;
-    border: 1px solid aqua;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.603);
     transition: box-shadow 0.3s ease-in-out;
     background: linear-gradient(45deg,#453bfc, #0c01d0, #050064);
@@ -157,9 +156,13 @@
     background: linear-gradient(45deg,#a2fc3b, #08d001, #116400);
 }
 
-.flex-container{
+.bg{
     background: linear-gradient(45deg, white, #e8e4db, #ddd8bd);
     border-radius: 5px;
+}
+
+.body{
+    background: linear-gradient(45deg, white, #e8e4db, #ddd8bd);
 }
 
 

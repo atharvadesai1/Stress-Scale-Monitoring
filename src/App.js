@@ -11,6 +11,7 @@ import Phq9DepressionTest from "./pages/Phq9DepressionTest";
 import DepressionScore from "./pages/score/DepressionScore";
 import AnxietyScore from "./pages/score/AnxietyScore";
 import Info from "./pages/Info";
+import './index.css'
 
 function App() {
   return (

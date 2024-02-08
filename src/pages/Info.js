@@ -4,14 +4,14 @@ import '../styles/Test.css'
 
 function Info() {
   return (
-    <Layout>
+    <Layout className='bg'>
         <div>
-        <h1 className="hede">General Information</h1>
-        <div class="flex-container">
-            <div class="flex-box"></div>
-            <div class="flex-box"></div>
-            <div class="flex-box"></div>
-        </div>
+            <h1 className="hede">General Information</h1>
+            <div class="flex-container">
+                <div class="flex-box"></div>
+                <div class="flex-box"></div>
+                <div class="flex-box"></div>
+            </div>
         </div>
     </Layout>    
   )

@@ -10,13 +10,13 @@
   
 
 .greenbox{
-    border: 7px rgba(122, 250, 122, 0.864) solid;
+    /* border: 7px rgba(122, 250, 122, 0.864) solid; */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     height: 100%;
     width: 60%;
     position: fixed;
     left: 0px;
-    background-color: rgba(122, 250, 122, 0.864);
+    background: linear-gradient(45deg, #ff6347, #ffa500, #ffd700);
     transform: skewX(-15deg); /* Skew the border to the left */
     transform-origin: 0 0;
 }
@@ -32,8 +32,8 @@
     transform: translate(-50%,-50%);
 }
 .formp{
-    background-color: white;
-    border: 2px white solid;
+    background: linear-gradient(45deg,white, rgb(254, 254, 172), rgb(159, 250, 159), rgb(162, 162, 251),rgb(217, 162, 251));
+    /* border: 1px black solid; */
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
