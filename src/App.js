@@ -10,6 +10,7 @@ import StressScore from "./pages/score/StressScore";
 import Phq9DepressionTest from "./pages/Phq9DepressionTest";
 import DepressionScore from "./pages/score/DepressionScore";
 import AnxietyScore from "./pages/score/AnxietyScore";
+import Info from "./pages/Info";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/info" element={<Info />} />
           <Route path="/about" element={<About />} />
           <Route path="/tests" element={<Tests/>} />
           <Route path="/contact" element={<Contact />} />
