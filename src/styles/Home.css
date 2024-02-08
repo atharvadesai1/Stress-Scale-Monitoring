@@ -16,7 +16,7 @@
     width: 60%;
     position: fixed;
     left: 0px;
-    background: linear-gradient(45deg, #ff6347, #ffa500, #ffd700);
+    background: linear-gradient(45deg, red, orange, yellow);
     transform: skewX(-15deg); /* Skew the border to the left */
     transform-origin: 0 0;
 }
@@ -32,7 +32,7 @@
     transform: translate(-50%,-50%);
 }
 .formp{
-    background: linear-gradient(45deg,white, rgb(254, 254, 172), rgb(159, 250, 159), rgb(162, 162, 251),rgb(217, 162, 251));
+    background: linear-gradient(45deg, rgb(254, 254, 172), rgb(159, 250, 159), rgb(162, 162, 251),rgb(217, 162, 251));
     /* border: 1px black solid; */
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);

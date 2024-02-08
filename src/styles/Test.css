@@ -38,12 +38,11 @@
     top: 25%;
     left: 50%;
     transform: translate(-50%);
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease-in-out;
     padding: 10px 50px 10px 50px;
-    margin: 20px auto
-    
+    margin: 20px auto;
+    background: linear-gradient(45deg,rgb(255, 254, 215), rgb(249, 249, 122), yellow); 
 }
 
 .hed{
