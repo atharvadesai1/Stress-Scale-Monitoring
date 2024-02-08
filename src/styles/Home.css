@@ -1,3 +1,13 @@
+@font-face {
+    font-family: header1;
+    src: url('../font-styles/RemachineScript_Personal_Use.ttf');
+}
+
+@font-face {
+    font-family: header2;
+    src: url('../font-styles/Revamped.otf');
+}
+
 .imagecenter{
     background-repeat: no-repeat; 
     background-position: bottom right;

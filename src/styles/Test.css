@@ -145,6 +145,10 @@
     transition: box-shadow 0.3s ease-in-out;
     background: linear-gradient(45deg,#453bfc, #0c01d0, #050064);
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex-container>:nth-child(2){
@@ -152,7 +156,7 @@
 }
 
 .flex-container>:nth-child(3){
-    background: linear-gradient(45deg,#a2fc3b, #08d001, #116400);
+    background: linear-gradient(45deg,#549d01, #059d00, #0b3f00);
 }
 
 .bg{
@@ -164,4 +168,21 @@
     background: linear-gradient(45deg, white, #e8e4db, #ddd8bd);
 }
 
+.flex-box>div>p{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-box>div>img{
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-box>div>h2{
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    color: wheat;
+
+}
 
