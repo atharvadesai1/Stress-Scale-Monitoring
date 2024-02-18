@@ -2,6 +2,9 @@ import React from 'react'
 import Layout from '../components/Layout'
 import '../styles/Test.css'
 import mountain from '../images/mountain.jpg'
+import SendIcon from '@mui/icons-material/Send';
+import { Button } from '@mui/material';
+import { Link } from 'react-router-dom'; 
 
 function Info() {
   return (
@@ -32,6 +35,11 @@ function Info() {
                   <div>
                     <img src={mountain} alt="pick" style={{width: '500px',height: '350px'}}/>
                   </div>
+                </div>
+                <div>
+                  <Link to={'/chatbot'}>
+                  <Button variant="contained" color="secondary"  endIcon={<SendIcon />}>TRY CHATBOT</Button>
+                  </Link>
                 </div>
             </div>
         </div>
