@@ -42,7 +42,7 @@
     transition: box-shadow 0.3s ease-in-out;
     padding: 10px 50px 10px 50px;
     margin: 20px auto;
-    background: linear-gradient(45deg,rgb(255, 254, 215), rgb(249, 249, 122), yellow); 
+    background: white; 
 }
 
 .hed{

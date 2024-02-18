@@ -20,8 +20,6 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-weight: 500;
-    border-bottom: 2px solid transparent; 
-    transition: border-bottom 0.3s ease;
 }
 
 .navigation_bar li a:hover{

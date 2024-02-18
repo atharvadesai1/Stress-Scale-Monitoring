@@ -9,7 +9,7 @@ function Chatbot() {
     <div>
       <Layout>
       <div className="chatbotkadabba">
-        <h2 style={{textAlign:'center', margin:'5px'}} className='hedd'>Chat With Me</h2>
+        <h2 style={{textAlign:'center', margin:'5px'}} className='hedd'>Chat With Me</h2><br />
         <iframe
             className='chatbotlink'
             title='chatbott'
