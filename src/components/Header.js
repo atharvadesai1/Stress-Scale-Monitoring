@@ -8,9 +8,9 @@ function Header() {
   return (
     <>
       <Box>
-        <AppBar component='nav' sx={{bgcolor:'#5D5B5A'}}>
+        <AppBar component='nav' sx={{bgcolor:'transparent', borderBottom:'none !important', opacity:'0.9', boxShadow:'none !important', position:'absolute'}}>
           <Toolbar>
-            <Box sx={{display: {xs:'none', sm:'block'}}}>
+            <Box sx={{display: {sm:'block'}, borderBottom:'none !important', boxShadow:'none !important'}}>
               <ul className='navigation_bar'>
                 <li>
                   <Link to={'/'}>HOME</Link>

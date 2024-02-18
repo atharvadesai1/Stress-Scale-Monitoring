@@ -16,15 +16,18 @@
 
 .navigation_bar li a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
+    font-weight: 500;
     border-bottom: 2px solid transparent; 
     transition: border-bottom 0.3s ease;
 }
 
 .navigation_bar li a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
+    color: green;
+    transition: 0.3;
 }
 
 .logo_text{
