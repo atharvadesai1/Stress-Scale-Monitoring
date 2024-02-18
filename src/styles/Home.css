@@ -61,3 +61,27 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 2px solid rgb(12, 31, 153);
 }
+
+.chatbotkadabba{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 75%;
+}
+
+.chatbotlink{
+    border: 1px black solid;
+    border-radius: 5px;
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    min-height: 420px;
+}
+
+.hedd{
+    font-family: header1;
+    font-weight: 100;
+    font-size: 40px;
+}

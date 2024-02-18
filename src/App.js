@@ -11,6 +11,7 @@ import Phq9DepressionTest from "./pages/Phq9DepressionTest";
 import DepressionScore from "./pages/score/DepressionScore";
 import AnxietyScore from "./pages/score/AnxietyScore";
 import Info from "./pages/Info";
+import Chatbot from "./pages/Chatbot";
 import './index.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/tests/stressscore" element={<StressScore/>}/>
           <Route path="/tests/depressionscore" element={<DepressionScore/>}/>
           <Route path="/tests/anxietyscore" element={<AnxietyScore/>}/>
+          <Route path="/chatbot" element={<Chatbot/>}/>
         </Routes>
       </BrowserRouter>
     </div>
